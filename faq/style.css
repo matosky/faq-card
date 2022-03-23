@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    background-image: url('./img/simone-secci-49uySSA678U-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    background: #000;
+}
+
+header{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 200;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .faq-card{
+    width: 75%;
+    max-width: 90%;
+   background: rgb(26, 27, 27);
+   padding: 5px 10px;
+   border-radius: 5px;
+
+}
+
+.wrapper .faq-card img{
+    margin-left: 20px;
+}
+
+.wrapper .faq-card img:hover{
+    cursor: pointer;
+}
+
+.wrapper .faq-card .box p{
+ font-size: 28px;
+}
+
+.wrapper .faq-card .box{
+   /* border: 1px solid lightslategrey; */
+   margin-bottom: 5px;
+   box-shadow: 2px 2px lightslategray;
+}
+
+.wrapper .faq-card h1{
+    margin: 15px 0;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 200;
+}
+
+.wrapper .faq-card .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background: rgb(220, 225, 230);
+   /* padding-bottom: 10px; */
+}
+
+.wrapper .faq-card .ans p{
+   background: rgb(26, 27, 27);
+   font-size: 16px;
+   padding: 20px 0 0 0;
+   color: #fff;
+   }
+.wrapper .faq-card .ans{
+ display: none;
+}
+
+footer{
+    margin-top: 20px;
+    font-size: 28px;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+/* 
+@media screen and (max-width:673px){
+    .wrapper{
+        padding: 10px;
+        overflow: scroll;
+    }
+
+    header{
+        margin-bottom: 20px;
+    }
+
+  
+    .wrapper .faq-card{
+        max-width: 95%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .wrapper .faq-card img{
+        width: 24px;
+        height: 24px;
+    }
+
+    footer{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+} */
+
+@media screen and (max-width:673px){
+    .wrapper{
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    header{
+        padding: 0 20px;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+    }
+
+    .wrapper .faq-card{
+        margin-top: 100px;
+        width: 100%;
+        max-width: 95%;
+        height: fit-content;
+        padding: 50px 20px;
+        margin: 0 auto;
+    
+    }
+
+    .wrapper .faq-card h1{
+       color: rgb(161, 146, 146);
+    }
+    .wrapper .faq-card .box p{
+        font-size: 16px;
+       }
+
+    footer{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
